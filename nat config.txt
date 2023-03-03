@@ -1,0 +1,9 @@
+ip nat inside source static {LAN} {Kifelé néző router port cím}
+ip route 0.0.0.0 0.0.0.0 {Másik külső router port cím}
+
+
+int {befele néző port}
+ip nat inside
+
+int {kifelé néző port}
+ip nat outside
